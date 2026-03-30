@@ -12,7 +12,7 @@
             <input type="text" name="user" placeholder="Username" class="input-control">
             <input type="password" name="pass" placeholder="Password" class="input-control">
             <input type="submit" name="submit" value="Login" class="btn">
-            <label>Belum Punya Akun? <a href="#.php">Klik di sini untuk Mendaftar</a></label>
+            <label>Belum Punya Akun? <a href="register.php">Klik di sini untuk Mendaftar</a></label>
         </form>
 
         <?php

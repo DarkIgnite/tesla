@@ -17,19 +17,19 @@
         </form>
 
         <?php
-        include ('db.php');
-        if(isset($_POST['submit'])){
+        include('db.php');
+        if (isset($_POST['submit'])) {
             $username = $_POST['user'];
             $password = $_POST['pass'];
 
             $sql = mysqli_query($conn, "SELECT * FROM tb_admin 
-            WHERE username = '$username' AND password = '$password'") 
-            or die(mysqli_error());
+            WHERE username = '$username' AND password = '$password'")
+            or die(mysqli_error($conn));
 
-            if(mysqli_num_rows($sql) == 0){
+            if (mysqli_num_rows($sql) == 0) {
                 echo "<script>alert('Username / Password Salah')</script>";
                 echo '<script type="text/javascript">window.location="login.php";</script>';
-            }else{
+            } else {
                 session_start();
 
                 $row = mysqli_fetch_assoc($sql);
@@ -37,15 +37,14 @@
                 $_SESSION['level'] = $row['level'];
                 $_SESSION['status_login'] = true;
 
-                if($row['level'] == 'admin'){
+                if ($row['level'] == 'admin') {
                     echo "<script>alert('Login Berhasil')</script>";
                     echo '<script type="text/javascript">window.location="admin/dashboard.php";</script>';
 
-                }elseif($row['level'] == 'pelanggan'){
+                } elseif ($row['level'] == 'pelanggan') {
                     echo "<script>alert('Login Berhasil')</script>";
                     echo '<script type="text/javascript">window.location="user/dashboard.php";</script>';
-                }
-                else{
+                } else {
                     header('location:index.php');
                 }
             }

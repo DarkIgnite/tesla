@@ -24,7 +24,7 @@
         
         <?php
             include('db.php');
-            if (isset($_POST['submit'])) {
+        if (isset($_POST['submit'])) {
             $nama = $_POST['nama'];
             $alamat = $_POST['alamat'];
             $telpon = $_POST['telpon'];

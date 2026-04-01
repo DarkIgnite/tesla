@@ -1,4 +1,3 @@
-<?php include 'db.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,6 +6,19 @@
     <title>Halaman Dashboard Admin</title>
 </head>
 <body>
-    
+    <div class="wrapper">
+        <div class="header"></div>
+
+        <div class="sidebar">
+            <div class="sidebar-title"><b>Menu</b></div>
+            <ul>
+                <?php include 'sidebar.php'; ?>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Selamat Datang Admin Sistem</h2>
+        </div>
+    </div>
 </body>
 </html>

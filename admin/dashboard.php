@@ -1,6 +1,4 @@
-<?php
-include('session.php');
-?>
+<?php include('session.php'); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -20,7 +18,7 @@ include('session.php');
         </div>
 
         <div class="section">
-            <h2>Selamat Datang Admin Sistem <?php echo $user_row['admin_name']; ?></h2>
+            <h2>Selamat Datang Admin Sistem : <?php echo $user_row['admin_name']; ?></h2>
         </div>
     </div>
 </body>

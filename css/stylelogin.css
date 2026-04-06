@@ -1,0 +1,123 @@
+/* tesla css login modern - white mode */
+:root {
+  --bg: #f5f7fa;
+  --surface: #ffffff;
+  --surface2: #f0f3f8;
+  --accent: #2563eb;
+  --accent-soft: #3b82f6;
+  --text: #1e293b;
+  --muted: #64748b;
+  --danger: #ef4444;
+  --radius: 14px;
+  --border-color: #e2e8f0;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  color: var(--text);
+  background: linear-gradient(135deg, var(--bg) 0%, #fafbfc 60%, #f0f4f8 100%);
+  display: grid;
+  place-items: center;
+  padding: 2rem;
+}
+#bg-login {
+  width: 100%;
+}
+.box-login {
+  width: min(460px, 100%);
+  padding: 2.2rem 1.8rem;
+  background: var(--surface);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: box-shadow 0.3s ease;
+}
+
+.box-login:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+}
+.box-login h2 {
+  margin: 0 0 1.3rem;
+  font-size: 1.9rem;
+  letter-spacing: 0.035em;
+  text-align: center;
+  color: var(--text);
+}
+.form-note {
+  margin: 0 0 1.2rem;
+  color: var(--muted);
+  text-align: center;
+}
+.input-control {
+  width: 100%;
+  margin-bottom: 0.95rem;
+  padding: 0.88rem 0.95rem;
+  border-radius: 10px;
+  border: 1px solid var(--border-color);
+  background: var(--surface2);
+  color: var(--text);
+  font-size: 1rem;
+  transition: all 0.2s ease;
+}
+.input-control:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+  outline: none;
+  background: var(--surface);
+}
+.btn {
+  width: 100%;
+  padding: 0.95rem;
+  border: 0;
+  border-radius: 10px;
+  background: linear-gradient(90deg, #2563eb, #1d4ed8);
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.05rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 8px rgba(37, 99, 235, 0.3);
+}
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(37, 99, 235, 0.4);
+}
+.btn:active {
+  transform: translateY(0);
+  opacity: 0.9;
+}
+label {
+  display: block;
+  margin-top: 0.8rem;
+  color: #64748b;
+  font-size: 0.9rem;
+  text-align: center;
+}
+label a {
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.2s ease;
+}
+label a:hover {
+  color: #1d4ed8;
+  text-decoration: underline;
+}
+@media (max-width: 500px) {
+  .box-login {
+    padding: 1.35rem 1rem;
+  }
+  .box-login h2 {
+    font-size: 1.55rem;
+  }
+  .input-control {
+    font-size: 0.95rem;
+  }
+  .btn {
+    font-size: 1rem;
+  }
+}

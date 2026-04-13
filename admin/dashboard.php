@@ -21,7 +21,7 @@
         <div class="section">
             <div class="container">
                 <h1>Dashboard Admin</h1>
-                <h2>Selamat Datang, <?php echo $user_row['admin_name']; ?> 👋</h2>
+                <h2>Selamat Datang, <?php echo $user_row['admin_name']; ?> </h2>
                 <p style="color: var(--muted); font-size: 1.1rem; line-height: 1.6;">
                     Anda login sebagai Administrator dari Tesla Company. 
                     Kelola data dengan aman dan efisien.

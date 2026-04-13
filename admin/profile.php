@@ -28,7 +28,7 @@
                 <h1>Pengaturan Profil</h1>
                 
                 <form id="form-profil" method="post">
-                    <h3>📋 Data Profil</h3>
+                    <h3>Data Profil</h3>
                     <fieldset>
                         <label>Nama Lengkap</label>
                         <input type="text" name="nama" placeholder="Nama Lengkap" value="<?php echo $d->admin_name ?>" required>
@@ -50,7 +50,7 @@
                         <input type="text" name="alamat" placeholder="Alamat" value="<?php echo $d->admin_address ?>" required>
                     </fieldset>
                     <fieldset>
-                        <button name="submit" type="submit">💾 Simpan Perubahan</button>
+                        <button name="submit" type="submit">Simpan Perubahan</button>
                     </fieldset>
                 </form>
                 <?php 
@@ -81,7 +81,7 @@
                         $d = mysqli_fetch_object($query);
                     ?>
                     <form id="form-password" method="post">
-                      <h3>🔐 Ubah Password</h3>  
+                      <h3>Ubah Password</h3>  
                       <fieldset>
                         <label>Password Baru</label>
                         <input type="password" name="pass1" placeholder="Password Baru" required>
@@ -91,7 +91,7 @@
                         <input type="password" name="pass2" placeholder="Konfirmasi Password Baru" required>
                       </fieldset>
                       <fieldset>
-                        <button name="ubah_password" type="submit">🔄 Ubah Password</button>
+                        <button name="ubah_password" type="submit">Ubah Password</button>
                       </fieldset>
                     </form>
                     <?php

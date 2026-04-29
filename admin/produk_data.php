@@ -33,6 +33,7 @@
                         <th>Status</th>
                         <th>Aksi</th>
                     </tr>
+                    
                     <?php
                         $no = 1;
                         $produk = mysqli_query($conn, "SELECT * FROM tb_product LEFT JOIN tb_category USING (category_id) ORDER BY product_id DESC");

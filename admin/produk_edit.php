@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Bukawarung</title>
+    <title>Edit Produk</title>
     <link rel="stylesheet" type="text/css" href="../css/styleadmin.css">
 </head>
 <body>
@@ -12,7 +12,7 @@
         <div class="header"></div>
 
         <div class="sidebar">
-            <div class="sidebar-title"><b>Bukawarung</b></div>
+            <div class="sidebar-title"><b>Edit Produk</b></div>
             <ul>
                 <?php include 'sidebar.php' ?>
             </ul>

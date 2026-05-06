@@ -94,7 +94,7 @@
                             $newname = 'produk' . time() . '.' . $type2;
 
                             // menampung data format file yang diizinkan
-                            $tipe_diizinkan = array('jpg', 'jpeg', 'png', 'gif');
+                            $tipe_diizinkan = array('jpg', 'jpeg', 'png', 'gif', 'webp', 'avif', 'ico');
 
                             // validasi format file
                             if (!in_array($type2, $tipe_diizinkan)) {

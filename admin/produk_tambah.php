@@ -86,7 +86,7 @@
                         $newname = 'produk' . time() . '.' . $type2;
 
                         // menampung data format file yang diizinkan
-                        $tipe_diizinkan = array('jpg', 'jpeg', 'png', 'gif');
+                        $tipe_diizinkan = array('jpg', 'jpeg', 'png', 'gif', 'webp', 'avif', 'ico');
 
                         // validasi format file
                         if (!in_array($type2, $tipe_diizinkan)) {
@@ -99,7 +99,6 @@
                             $insert = mysqli_query($conn, "INSERT INTO tb_product VALUES (null,'".$kategori."','".$nama."','".$harga."','".$deskripsi."','".$newname."','".$status."')");
 
                             if ($insert) {
-                                echo '<script>alert("Tambah data berhasil")</script>';
                                 echo '<script>window.location="produk_data.php"</script>';
                             } else {
                                 echo 'gagal ' . mysqli_error($conn);

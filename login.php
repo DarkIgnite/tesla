@@ -43,7 +43,7 @@
 
                 } elseif ($row['level'] == 'pelanggan') {
                     echo "<script>alert('Login Berhasil')</script>";
-                    echo '<script type="text/javascript">window.location="user/dashboard.php";</script>';
+                    echo '<script type="text/javascript">window.location="user/dashboard_user.php";</script>';
                 } else {
                     header('location:index.php');
                 }

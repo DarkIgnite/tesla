@@ -59,7 +59,7 @@ $a = mysqli_fetch_object($kontak);
                 ?>
                         <a href="index.php?kat=<?php echo $k['category_id'] ?>">
                             <div class="col-5">
-                                <img src="img/category.png" width="50px" style="margin-bottom:5px;">
+                                <img src="img/food.png" width="50px" style="margin-bottom:5px;">
                                 <p><?php echo $k['category_name'] ?></p>
                             </div>
                         </a>
@@ -145,7 +145,7 @@ $a = mysqli_fetch_object($kontak);
             <h4>No. Hp</h4>
             <p><?php echo $a->admin_telp ?></p>
 
-            <small>Copyright &copy; 2023 - Bukawarung.</small>
+            <small>Copyright &copy; 2026 - Tesla.</small>
         </div>
     </div>
 
